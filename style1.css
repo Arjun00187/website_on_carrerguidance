@@ -1,0 +1,96 @@
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #4A148C, #0D47A1);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.box {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex: 0 0 calc(50% - 40px);
+  max-width: 450px;
+  background: linear-gradient(to bottom right, #FFFFFF, #F5F5F5);
+  border-radius: 10px;
+}
+
+
+/* Separate classes for each category */
+.olympiad {
+  background: linear-gradient(to bottom right, #FFFFFF, #F5F5F5);
+}
+
+.medical {
+  background: linear-gradient(to bottom right, #FFFFFF, #F5F5F5);
+}
+
+.law {
+  background: linear-gradient(to bottom right, #FFFFFF, #F5F5F5);
+}
+
+.ap {
+  background: linear-gradient(to bottom right, #FFFFFF, #F5F5F5);
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul ul {
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+}
+
+li li {
+  margin: 8px 0;
+}
+
+li:hover ul {
+  display: block;
+}
+
+/* Optional: Style links on hover within sub-menus */
+li ul li:hover a {
+  color: #009688;
+}
